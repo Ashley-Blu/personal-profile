@@ -1,0 +1,41 @@
+/* Reset and base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header img {
+  width: 120px;
+  border-radius: 50%; /* makes it circular if it's a square */
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* Hover effect */
+a:hover {
+  color: orange;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header, footer {
+    flex-direction: column;
+  }
+}
