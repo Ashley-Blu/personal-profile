@@ -1,17 +1,21 @@
-/* Reset and base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
+
+.header h1:hover {
+	color: #0073b1;
+}
+
 header img {
   width: 120px;
-  border-radius: 50%; /* makes it circular if it's a square */
+  border-radius: 50%; /
 }
 
 header, footer {
-  background: #333;
+  background: #222;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -20,18 +24,24 @@ header, footer {
 }
 
 section {
-  padding: 20px;
+  padding: 30px;
 }
 
-#skills ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+.skills-list li:hover {
+  color: #0073b1;
+  cursor: pointer;
 }
 
-/* Hover effect */
 a:hover {
-  color: orange;
+  color: blue;
 }
+
+.footer a {
+	color: white;
+	text-decoration: none;
+	margin: 0 10px;
+	font-weight: bold;
+	transition: color 0.3 ease;
 
 /* Responsive Design */
 @media (max-width: 600px) {
@@ -39,3 +49,34 @@ a:hover {
     flex-direction: column;
   }
 }
+
+/* Button and link focus styles */
+button:focus, a:focus {
+  outline: 2px solid #f39c12;
+}
+
+/*for good contrast for links */
+a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #004172;
+  text-decoration: underline;
+}
+
+/* for better button contrast */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover, button:focus {
+  background-color: #0073b1;
+}
+
