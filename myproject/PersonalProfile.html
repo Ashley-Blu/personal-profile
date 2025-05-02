@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matsekoleng Ashley Profile Page</title>
-    <link rel="stylesheet" href="styles.css">
-	<a href="https://www.linkedin.com/in/ashley-smith/" target="_blank">
-  <i class="fab fa-linkedin"></i> LinkedIn</a>
+    <link rel="stylesheet" href="styles.css" />
+  <!-- for the social media links icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   </head>
   <body>
-    <header>
-      <img src="Ashley.jpg" alt="Your Name">
-      <h1>Matsekoleng Ashley</h1>
-    </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a small girl with big dreams.
-	  Ambitious, kind, strong, passionate and curiousity will never kill me, I am nowhere near being a cat.
-      </p>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Communication skills</li>
-        <li>Problem solving</li>
-        <li>Programming languages: Proficient in java and web development.</li>
-      </ul>
-    </section>
-<footer>
-  <p>Connect with me:</p>
-  <a href="https://www.linkedin.com/in/ashley-matsekoleng/" target="_blank">
-    <i class="fab fa-linkedin"></i> LinkedIn</a> |
-  <a href="https://instagram.com/user_ashleym" target="_blank">
-    <i class="fab fa-instagram"></i> Instagram</a>
-  <a href="https://github.com/Ashley-Blu" target="_blank">
-    <i class="fab fa-github"></i> GitHub</a>
+   <header class="header">
+  <img src="Ashley.jpg" alt="Ashley Matsekoleng" class="profile-pic" />
+  <h1>Ashley Matsekoleng</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a young woman who is passionate about everything I put my mind into.
+      I have a great teachable spirit. Always open to learn and advance my experience. 
+	  I am a dependable, hardworking, and commited individual. I am a team player. 
+	  In a nutshell, Ashley is a valuable asset and <i>loves blue</i>.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Critical thinking</li>
+      <li>Problem solving</li>
+      <li>Communication</li>
+      <li>Computer literacy</li>
+      <li>Languages: HTML, CSS, Java, JavaScript, Kotlin, SQL, JPQL</li>
+    </ul>
+  </section>
+
+  <!-- contact mw through my email address -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <h4>Connect with me on:</h4>
+  <a href="https://github.com/Ashley-Blu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  <a href="https://instagram.com/user_ashleym" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://www.linkedin.com/in/ashley-matsekoleng" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
 </footer>
+	  
   </body>
 </html>
